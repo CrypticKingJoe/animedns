@@ -38,7 +38,7 @@ const port = process.env.PORT || 4000;
 
 const corsOptions = {
   origin: '*',
-  credentails: true,
+  credentials: true,
   optionSuccessStatus: 200,
   port: port,
 };
@@ -598,5 +598,5 @@ app.use((req, res) => {
 
 
 app.listen(port, () => {
-  console.log('Express server listening on port %d in %s mode', port, app.settings.env);
+  console.log(`Server is running on port ${port}`);
 });
